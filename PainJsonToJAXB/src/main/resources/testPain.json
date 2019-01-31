@@ -1,0 +1,102 @@
+{
+	"CstmrCdtTrfInitn": {
+		"GrpHdr": {
+			"MsgId": "000000123456789798",
+			"CreDtTm": "2018-06-25T12:00:00",
+			"NbOfTxs": "1",
+			"InitgPty": [{
+				"Nm": "PENTAGON FEDERAL CREDIT UNION"
+			},
+				{
+				"Nm": "PENTAGON FEDERAL CREDIT UNION"
+			}]
+		},
+		"PmtInf": {
+			"PmtInfId": "000000123456789798",
+			"PmtMtd": "TRF",
+			"PmtTpInf": {
+				"LclInstrm": {
+					"Cd": "DRB"
+				}
+			},
+			"ReqdExctnDt": {
+				"Dt": "2018-06-25"
+			},
+			"Dbtr": {
+				"Nm": "Bank of America",
+				"PstlAdr": {
+					"AdrLine": [
+						"115 W 42nd St, New York, NY 10036,",
+						"US"
+					]
+				}
+			},
+			"DbtrAcct": {
+				"Id": {
+					"Othr": {
+						"Id": "987659003"
+					}
+				}
+			},
+			"DbtrAgt": {
+				"FinInstnId": {
+					"ClrSysMmbId": {
+						"MmbId": "234234325"
+					},
+					"Nm": "Unicredit",
+					"PstlAdr": {
+						"AdrLine": [
+							"115 W 42nd St, Rome, IT 10036,",
+							"IT"
+						]
+					}
+				}
+			},
+			"CdtTrfTxInf": {
+				"PmtId": {
+					"EndToEndId": "000000123456789333"
+				},
+				"Amt": {
+					"InstdAmt": {
+						"_Ccy": "USD",
+						"__text": "1668.00"
+					}
+				},
+				"CdtrAgt": {
+					"FinInstnId": {
+						"ClrSysMmbId": {
+							"MmbId": "256078446"
+						},
+						"Nm": "PENTAGON FEDERAL CREDIT UNION",
+						"PstlAdr": {
+							"AdrLine": [
+								"P.O. BOX 1432 ALEXANDRIA Virginia,",
+								"22313"
+							]
+						}
+					}
+				},
+				"CdtrAcct": {
+					"Id": {
+						"Othr": {
+							"Id": "261010"
+						}
+					}
+				},
+				"InstrForCdtrAgt": {
+					"InstrInf": "Beneficiary information 001"
+				}
+			}
+		},
+		"SplmtryData": {
+			"Envlp": {
+				"AddtlInf": {
+					"BizInf": {
+						"ChanlCd": "INB"
+					}
+				}
+			}
+		}
+	},
+	"@xmlns": "urn:pts2:wire:iso:20022:tech:xsd:pain.001.001.08:V06"
+}
