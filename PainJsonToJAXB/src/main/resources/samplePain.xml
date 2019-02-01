@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:sample:20022:tech:01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:sample:20022:tech:01">
+	<accIdChoice>
+		<IBAN>TEST IBAN</IBAN>
+		<cur>
+			<currOrAmnt>USD-50</currOrAmnt>
+			<currOrAmnt>INR-300</currOrAmnt>
+		</cur>
+	</accIdChoice>
+</Document>

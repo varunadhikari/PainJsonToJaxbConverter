@@ -1,0 +1,8 @@
+{
+   "accId" : {
+      "IBAN" : "akiban",
+      "cur" : {
+         "currOrAmnt" : [ "USD" ]
+      }
+   }
+}

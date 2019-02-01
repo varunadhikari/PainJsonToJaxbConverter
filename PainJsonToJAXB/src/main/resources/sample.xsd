@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--customerCreditTransferInitiationWire is used to request movement of funds
+	from the Debtor account number to a Creditor account number via Fedwire Network.
+	It is used as a Financial institution internal message format. version 06:
+	2018.11.30 -->
+<xs:schema xmlns="urn:sample:20022:tech:01"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="urn:sample:20022:tech:01">
+    <xs:element name="Document" type="Document"/>
+    <xs:complexType name="AccountIdentification4Choice">
+        <xs:choice>
+            <xs:element name="IBAN" type="xs:string"/>
+            <xs:element name="cur" type="AccountCurrency"/>
+        </xs:choice>
+    </xs:complexType>
+     <xs:complexType name="AccountCurrency">
+        <xs:choice>
+            <xs:element maxOccurs="2" minOccurs="1" name="currOrAmnt" type="xs:string"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="Document">
+        <xs:sequence>
+            <xs:element name="accId" type="AccountIdentification4Choice"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

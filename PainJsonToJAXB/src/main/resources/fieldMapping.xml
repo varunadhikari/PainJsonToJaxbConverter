@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://dozer.sourceforge.net
+      http://dozer.sourceforge.net/schema/beanmapping.xsd">
+       
+     <mapping>
+        <class-a>com.json.generated.AccId</class-a>
+        <class-b>sample._20022.tech._01.AccountIdentification4Choice</class-b>
+        <field>
+            <a>IBAN</a>
+            <b>IBAN</b>
+        </field>
+        <field>
+            <a>cur</a>
+            <b>cur</b>
+        </field>
+    </mapping>
+ 
+    <mapping>
+        <class-a>com.json.generated.Cur</class-a>
+        <class-b>sample._20022.tech._01.AccountCurrency</class-b>
+        <field>
+            <a>currOrAmnt</a>
+            <b>currOrAmnt</b>
+        </field>        
+    </mapping>
+ 
+</mappings>

@@ -6,6 +6,7 @@ import java.net.URL;
 
 import org.jsonschema2pojo.DefaultGenerationConfig;
 import org.jsonschema2pojo.GenerationConfig;
+import org.jsonschema2pojo.Jackson1Annotator;
 import org.jsonschema2pojo.Jackson2Annotator;
 import org.jsonschema2pojo.SchemaGenerator;
 import org.jsonschema2pojo.SchemaMapper;
@@ -35,8 +36,8 @@ public class JsonConverter {
 			};
 
 			SchemaMapper mapper = new SchemaMapper(
-					new RuleFactory(config, new Jackson2Annotator(config), new SchemaStore()), new SchemaGenerator());
-			mapper.generate(model, "Document", "com.json.genrated", j.source);
+					new RuleFactory(config, new Jackson1Annotator(config), new SchemaStore()), new SchemaGenerator());
+			mapper.generate(model, "Ignore", "com.json.generated", j.source);
 			String path = JsonConverter.class.getProtectionDomain().getCodeSource().getLocation().getPath()+"../../build/generated/main/java/";
 			File dir = new File(path);
 			if (!dir.exists()){
